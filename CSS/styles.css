@@ -712,6 +712,9 @@ header {
 .footer {
     padding: var(--spacing-xl) 0;
     font-size: 0.95rem;
+    text-align: center;
+    justify-content: center;
+    
 }
 
 .footer-content {
