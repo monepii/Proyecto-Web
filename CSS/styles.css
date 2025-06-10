@@ -169,6 +169,7 @@ header {
     height: 100%;
     box-sizing: border-box;
     overflow: hidden;
+    justify-content: center;;
 }
 
 /* Removed all specific nth-child rules for spanning rows */
@@ -320,12 +321,10 @@ header {
 .product-promotions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: var(--container-max-width);
-    margin: var(--spacing-xl) auto;
+    max-width: 100%;
+    margin: 0;
     background: var(--color-background);
-    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
 }
 
 .promotion-left,
@@ -551,7 +550,7 @@ header {
     padding: 0;
     background: var(--color-background);
     margin: var(--spacing-xl) auto var(--spacing-xl) auto;
-    max-width: var(--container-max-width);
+    max-width: 100%;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
 }
@@ -613,8 +612,7 @@ header {
 }
 
 .subscribe-form button {
-    background: var(--color-text);
-    color: var(--color-background);
+   
     border: none;
     padding: var(--spacing-sm) var(--spacing-md);
     cursor: pointer;
@@ -708,26 +706,11 @@ header {
     font-style: italic;
 }
 
-.testimonial-lamp {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    object-position: top right;
-    z-index: 1;
-    max-height: 400px;
-    filter: grayscale(100%);
-    opacity: 0.8;
-}
 
 /* ==========================================================================
    Footer
    ========================================================================== */
 .footer {
-    background: #222;
-    color: var(--color-background);
     padding: var(--spacing-xl) 0;
     font-size: 0.95rem;
 }
@@ -752,18 +735,13 @@ header {
 }
 
 .footer-column ul li a {
-    color: rgba(255, 255, 255, 0.7);
     transition: color var(--transition-fast);
 }
 
-.footer-column ul li a:hover {
-    color: var(--color-background);
-}
 
 .footer h3 {
     margin-bottom: var(--spacing-md);
     font-size: 1.1rem;
-    color: var(--color-background);
     text-transform: uppercase;
     position: relative;
     padding-bottom: 5px;
@@ -782,17 +760,14 @@ header {
 .footer-content p {
     margin-bottom: var(--spacing-xs);
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-content address p {
     margin-bottom: var(--spacing-xs);
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-content a {
-    color: rgba(255, 255, 255, 0.7);
     transition: color var(--transition-fast);
 }
 
@@ -827,17 +802,12 @@ header {
     border: none;
     border-radius: var(--border-radius);
     background: rgba(255, 255, 255, 0.1);
-    color: var(--color-background);
     outline: none;
 }
 
-.newsletter-form input[type="email"]::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
 
 .newsletter-form button {
     background: var(--color-accent);
-    color: var(--color-text);
     border: none;
     padding: var(--spacing-sm) var(--spacing-md);
     cursor: pointer;
