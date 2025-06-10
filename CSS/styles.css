@@ -612,7 +612,6 @@ header {
 }
 
 .subscribe-form button {
-   
     border: none;
     padding: var(--spacing-sm) var(--spacing-md);
     cursor: pointer;
@@ -823,8 +822,7 @@ header {
     text-align: center;
     margin-top: var(--spacing-xl);
     padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);s
 }
 
 /* Media Queries for Footer */
